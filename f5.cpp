@@ -29,13 +29,11 @@ int minArrayValue(int num[],const int kSize) {
 	return index;
 }
 int main() {
-	const int size = 10;
-	int num[size] = {};
+	const int kSize = 10;
+	int num[kSize] = {};
 	int index = 0;
 	int min = -1;
-	modifyArrayValues(num,size);
-	index = minArrayValue(num, size);
+	modifyArrayValues(num,kSize);
+	index = minArrayValue(num, kSize);
 	cout << "The lowest v" << min << " at index " << index;
-}
-
-}
+ }
