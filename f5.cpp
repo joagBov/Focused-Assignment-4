@@ -8,6 +8,12 @@
 using namespace std;
 
 int modifyArrayValues(int num[], const int kSize) {
+	for (int i = 0; i < kSize; i++) {
+		//Asks the user to enter a value for each line.
+		cout << "Enter a number ";
+		cin >> num[i];
+	}
+	return 0;
 }
 int minArrayValue(int num[],const int kSize) {
 
