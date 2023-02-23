@@ -16,7 +16,17 @@ int modifyArrayValues(int num[], const int kSize) {
 	return 0;
 }
 int minArrayValue(int num[],const int kSize) {
-
+ int min = 0;
+ int index = 0;
+	for (int i = 0; i < kSize; i++) {
+		if (num[i] < min) {
+			//If it it the smallest switch the min with the new one.
+			min = num[i];
+			//Keep track of the min index.
+			index = i;
+		}
+	}
+	return index;
 }
 int main() {
 	const int size = 10;
